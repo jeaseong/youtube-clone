@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+/* layout */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #202020;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+.header__wrap {
+  background-color: #202020;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.contents__info,
+.contents__recommend {
+  padding: 10px;
+}
+
+/* header */
+.header__bar-title {
+  display: flex;
+  align-items: center;
+}
+
+.header__bar-title h2 {
+  color: #fff;
+}
+
+.header__bar-title i {
+  font-size: 25px;
+  padding-right: 5px;
+  color: #ff0000;
+}
+
+.header_bar-icons {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.header_bar-icons i:nth-child(1) {
+  padding-right: 7px;
+}
+
+/* contents__info */
+
+.tag__list {
+  display: flex;
+}
+
+.tag__list-lists a {
+  padding-right: 3px;
+  color: #35a6e7;
+  font-size: 16px;
+}
+
+/* info__title */
+
+.info__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__title h3 {
+  width: 95%;
+  font-size: 18px;
+}
+
+.info__title i {
+  font-size: 18px;
+}
+
+.info__timestamp {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.info__icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.info__icons div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.info__icons div:hover {
+  cursor: pointer;
+  color: #065fd4;
+}
+
+.info__user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: 300;
+}
+
+.info__user i {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 19px;
+}
+
+.user-profile a {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile .profile-name {
+  font-weight: 400;
+}
+
+.text-decoration {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.info__user .profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.profile-subscribe {
+  font-weight: 400;
+}
+
+.contents__recommend .recommend-next {
+  padding-bottom: 10px;
+}
+
+.recommend-outline {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.recommend-outline img {
+  float: left;
+  height: 130px;
+  width: 220px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 860px) {
+  .container {
+    display: flex;
+  }
+  .contents__info,
+  .contents__recommend {
+    width: 50%;
+  }
+  .avatar {
+    width: 200px;
+  }
+}
