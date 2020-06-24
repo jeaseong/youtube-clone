@@ -177,4 +177,7 @@ ol {
   .avatar {
     width: 200px;
   }
+  iframe {
+    height: 400px;
+  }
 }
